@@ -1,0 +1,108 @@
+<!--완료-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 작성</title>
+
+</head>
+<body>
+    <form>
+        <h1>Form 작성</h1>
+
+        <!--개인 정보 입력란 : text type, radio type, date type-->
+        <fieldset style="width:400px; margin:5px">
+            <legend>개인 정보 입력</legend>
+
+            <!--이름 작성란-->
+            <label for="uname">이름</label><br>
+            <input type="text" id="uname" name="uname" placeholder="이름을 입력"><br><br>
+
+            <!--성별 작성란-->
+            <label for="gender1">성별</label><br>
+            <input type="radio" id="gender1" name="gender" value="남성" checked>남성
+            <input type="radio" id="gender1" name="gender" value="여성">여성<br><br>
+
+            <!--혈액형 작성란-->
+            <label for="bloodtype">혈액형</label><br>
+            <input type="radio" id="bloodtype" name="bloodtype" value="O" checked>O<br>
+            <input type="radio" id="bloodtype" name="bloodtype" value="A">A<br>
+            <input type="radio" id="bloodtype" name="bloodtype" value="B">B<br>
+            <input type="radio" id="bloodtype" name="bloodtype" value="AB">AB<br><br>
+
+            <!--MBTI 선택란-->
+            <label for="MBTI">MBTI</label><br>
+            <select name="MBTI" id="MBTI">
+                <option value="empty">MBTI를 선택해주세요.</option>
+                <option value="ISTJ">ISTJ</option>
+                <option value="ISTP">ISTP</option>
+                <option value="INFJ">INFJ</option>
+                <option value="INTJ">INTJ</option>
+                <option value="ISFJ">ISFJ</option>
+                <option value="ISFP">ISFP</option>
+                <option value="INFP">INFP</option>
+                <option value="INTP">INTP</option>
+                <option value="ESTJ">ESTJ</option>
+                <option value="ESFP">ESFP</option>
+                <option value="ENFP">ENFP</option>
+                <option value="ENTP">ENTP</option>
+                <option value="ESFJ">ESFJ</option>
+                <option value="ESTP">ESTP</option>
+                <option value="ENFJ">ENFJ</option>
+                <option value="ENTJ">ENTJ</option>
+            </select><br><br>
+
+            <!--생일 입력란-->
+            <label for="birth">생일</label><br>
+            <input type="date" id="birth" name="birth"><br><br>
+
+            <!--이메일 작성란-->
+            <label for="email">이메일</label><br>
+            <input type="email" id="email" name="email" placeholder="handong.ac.kr 계정"><br><br>
+        </fieldset>
+
+        <!--RC 정보 선택란 : select-->
+        <fieldset style="width:400px;margin:5px">
+            <legend>소속 RC</legend>
+            <select name="RC" id="RC">
+                <option value="empty">RC를 선택해주세요.</option>
+                <option value="손양원">손양원</option>
+                <option value="열송학사">열송학사</option>
+                <option value="장기려">장기려</option>
+                <option value="카마이클">카마이클</option>
+                <option value="카이퍼">카이퍼</option>
+                <option value="토레이">토레이</option>
+            </select>
+        </fieldset>
+
+        <!--선호하는 학교 식당 선택란 : checkbox type-->
+        <fieldset style="width:400px;margin:5px">
+            <legend>선호하는 학교 식당</legend>
+            <input type="checkbox" id="cafeteria" name="cafeteria" value="학관" checked>학관
+            <input type="checkbox" id="cafeteria" name="cafeteria" value="라운지">라운지
+            <input type="checkbox" id="cafeteria" name="cafeteria" value="명성">명성
+            <input type="checkbox" id="cafeteria" name="cafeteria" value="버거킹">버거킹
+            <input type="checkbox" id="cafeteria" name="cafeteria" value="인브리즈">인브리즈<br>
+            <input type="checkbox" id="cafeteria" name="cafeteria" value="편의점/매점">편의점/매점
+            <input type="checkbox" id="cafeteria" name="cafeteria" value="그레이스테이블">그레이스테이블
+        </fieldset>
+        
+        <!--이번 학기 목표 학점 : text type-->
+        <fieldset style="width:400px;margin:5px">
+            <legend>이번 학기 목표 학점</legend>
+            <input type="text" id="grade" name="grade" placeholder="목표 학점을 입력해주세요.">
+        </fieldset>
+
+        <!--이번 학기 다짐 입력란 : textarea-->
+        <fieldset style="width:400px;margin:5px">
+            <legend>이번 학기 다짐!</legend>
+            <textarea name="content" id="content" cols=40 rows=3></textarea>
+        </fieldset>
+        
+        <!--submit/reset-->
+        <input type="submit" value="확인">
+        <input type="reset" value="취소">
+    </form>
+</body>
+</html>
