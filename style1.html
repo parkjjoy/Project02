@@ -3,47 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>style1</title>
+    <style>
+        body{
+            margin : 20px;
+            line-height : 26px; /*글자 위 아래 사이의 간격*/
+        }
+
+        #top {
+            background-color : rgb(4, 169, 109);
+            color : white;
+            margin : 4px;
+            padding : 16px;
+            border-radius : 4px;
+            
+        }
+
+        #top h1, #top p {
+            margin : 0;
+            padding : 0;
+        }
+
+        #sidebar {
+            background-color : rgb(51, 164, 232);
+            color : white;
+            border-radius : 4px;
+        }
+
+        #bottom {
+            background-color : rgb(241, 241, 241);
+            border-radius : 4px;
+            border : 1px solid rgb(214, 214, 214);
+        }
+
+    </style>
 </head>
 <body>
-    <div id="top">
-        <h1>Welcome to 박조이’s Homepage (22200313)</h1>
-        <p>Use the menu to select different Stylesheets</p>
-    </div>
-
-    <div id="mid">
-        <div id="menu">
-            <ul>
-                <li><a href="style1.html">Stylesheet 1</a></li>
-                <li><a href="style2.html">Stylesheet 2</a></li>
-                <li><a href="style3.html">Stylesheet 3</a></li>
-                <li><a href="style4.html">Stylesheet 4</a></li>
-                <li><a href="nostyle.html">No Stylesheet</a></li>
-            </ul>
+    <div class="container">
+        <div id="top">
+            <h1>Welcome to 박조이’s Homepage (22200313)</h1>
+            <p>Use the menu to select different Stylesheets</p>
         </div>
 
-        <div id="main">
-            <h1>Same Page Different Stylesheets</h1>
-            <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:<br>
-                <a href="style1.html">Stylesheet1</a><span>,</span>
-                <a href="style2.html">Stylesheet2</a><span>,</span>
-                <a href="style3.html">Stylesheet3</a><span>,</span>
-                <a href="style4.html">Stylesheet4</a><span>.</span>
-            </p>
+        <div id="mid">
+            <div id="menu">
+                <ul>
+                    <li><a href="style1.html">Stylesheet 1</a></li>
+                    <li><a href="style2.html">Stylesheet 2</a></li>
+                    <li><a href="style3.html">Stylesheet 3</a></li>
+                    <li><a href="style4.html">Stylesheet 4</a></li>
+                    <li><a href="nostyle.html">No Stylesheet</a></li>
+                </ul>
+            </div>
+
+            <div id="main">
+                <h1>Same Page Different Stylesheets</h1>
+                <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:<br>
+                    <a href="style1.html">Stylesheet1</a><span>,</span>
+                    <a href="style2.html">Stylesheet2</a><span>,</span>
+                    <a href="style3.html">Stylesheet3</a><span>,</span>
+                    <a href="style4.html">Stylesheet4</a><span>.</span>
+                </p>
             
 
-            <h2>No Styles</h2>
-            <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:<br>
-                <a href="nostyle.html">No Stylesheet</a><span>.</span>
-            </p>
-            
+                <h2>No Styles</h2>
+                <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:<br>
+                    <a href="nostyle.html">No Stylesheet</a><span>.</span>
+                </p>
+            </div>
+
+            <div id="sidebar">
+                <h3>Side-Bar</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+            </div>
+        </div>
+
+        <div id="bottom">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
         </div>
     </div>
-
-    <div id="sidebar">
-        <h3>Side-Bar</h3>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
-    
 </body>
 </html>
