@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name = "form1" action="form2_ok.php" onsubmit="return validateForm()" method="post">
+    <!--onsubmit  : 이벤트의 일종. 해당 form인 form1의 submit버튼이 눌려질 때를 의미, 즉 submit이 눌러지면 validateForm이 실행된다.-->
+        제목 : <input type = "text" name = "subject"><br>
+        이름 : <input type = "text" name = "writer"><br>
+        내용 : <textarea name = "content" cols='20' rows='5'></textarea><br>
+        <input type = "submit" value = "저장">
+    </form>
+</body>
+</html>
+
+<script>
+    function validateForm(){
+        var subject = document.form1.subject;
+        if (subject.value == ""){
+            alert("제목을 입력하세요");
+            subject.focus();
+            //focus : 입력창에 있는 커서가 깜빡깜빡 거리게 만듬
+            return false;
+            //return false가 되면 위에 있는 onsubmit 자체가 false가 되어 submit이 되지 않는다.
+        }
+
+        var writer = document.form1.writer;
+        if(writer.value ==""){
+            alert("이름을 입력하세요");
+            writer.focus();
+            return false;
+        }
+        
+        if(writer.length < 2){
+            alert("이름은 2글자 이상 입력하세요");
+            writer.focus(); 
+            return false;
+        }
+    }
+</script>
