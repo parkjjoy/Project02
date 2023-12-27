@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 작성</title>
+
+</head>
+
+<style>
+    body{
+        background-image: url("Image/background.png");
+        background-size: cover;
+    }
+
+    .text{
+        color : #ffffff;
+    }
+</style>
+
+<body>
+    <form onsubmit="gotoIndex()">
+        <h1 class="text">기도제목 수정</h1>
+
+        <fieldset style="width:400px; margin:5px">
+            <legend class="text">기본정보 작성</legend>
+
+            <!--이름 작성란-->
+            <label for="uname" class="text">이름</label><br>
+            <input type="text" id="uname" name="uname" value="박조이"><br><br>
+
+            <!--이메일 작성란-->
+            <label for="email" class="text">이메일</label><br>
+            <input type="email" id="email" name="email" value="pjoy4006@handong.ac.kr"><br><br>
+        </fieldset>
+        
+        <!--날짜 작성란 : date type-->
+        <fieldset style="width:400px;margin:5px">
+            <legend class="text">날짜</legend>
+            <input type="date" id="date" value="2023-10-18">
+        </fieldset>
+
+        <!--기도제목 작성 : textarea-->
+        <fieldset style="width:400px;margin:5px">
+            <legend class="text">기도제목 작성</legend>
+            <textarea name="content" id="content" cols=40 rows=3 >진로에 대한 방향성을 확실하게 결정할 수 있게 해주세요.</textarea>
+        </fieldset>
+        
+        <!--submit/reset-->
+        <a href = "index.html" class = "text" id = "edit">수정  </a>
+        <a href = "index.html" class = "text" id = "edit">  취소</a>
+    </form>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 작성</title>
+
+</head>
+
+<style>
+    body{
+        background-image: url("Image/background.png");
+        background-size: cover;
+    }
+
+    .text{
+        color : #ffffff;
+    }
+</style>
+
+<body>
+    <form>
+        <h1 class="text">기도제목 작성</h1>
+
+        <fieldset style="width:400px; margin:5px">
+            <legend class="text">기본정보 작성</legend>
+
+            <!--이름 작성란-->
+            <label for="uname" class="text">이름</label><br>
+            <input type="text" id="uname" name="uname" placeholder="이름을 입력" required><br><br>
+
+            <!--이메일 작성란-->
+            <label for="email" class="text">이메일</label><br>
+            <input type="email" id="email" name="email" placeholder="handong.ac.kr 계정" required><br><br>
+        </fieldset>
+        
+        <!--날짜 작성란 : date type-->
+        <fieldset style="width:400px;margin:5px">
+            <legend class="text">날짜</legend>
+            <input type="date" id="date" name="date" required>
+        </fieldset>
+
+        <!--기도제목 작성 : textarea-->
+        <fieldset style="width:400px;margin:5px">
+            <legend class="text">기도제목 작성</legend>
+            <textarea name="content" id="content" cols=40 rows=3 required></textarea>
+        </fieldset>
+        
+        <!--submit/reset-->
+        <input type="submit" value="확인">
+        <input type="reset" value="취소">
+    </form>
+</body>
+</html>
